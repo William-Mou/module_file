@@ -1,7 +1,7 @@
-%NCDF_HOME           $APPROOT/build
-%HDF5_HOME           $APPROOT/build
+%NCDF_HOME           $APPROOT/opt
+%HDF5_HOME           $APPROOT/opt
 
-%XIOS_HOME           $APPROOT/build/XIOS/branchs/xios-2.5
+%XIOS_HOME           $APPROOT/opt/XIOS/branchs/xios-2.5
 %OASIS_HOME          /not/defined
 
 
@@ -19,12 +19,12 @@
 
 %CPP                 cpp -Dkey_nosignedzero
 
-%FC                  $APPROOT/build/mpich-3.1.4/bin/mpif90 -c -cpp
+%FC                  $APPROOT/opt/mpich-3.1.4/bin/mpif90 -c -cpp
 
 %FCFLAGS             -fdefault-real-8 -g -O2 -ffree-line-length-none
 %FFLAGS              %FCFLAGS
 
-%LD                  $APPROOT/build/mpich-3.1.4/bin/mpif90
+%LD                  $APPROOT/opt/mpich-3.1.4/bin/mpif90
 %LDFLAGS
 %FPPFLAGS            -P -C -traditional
 %AR                  ar
