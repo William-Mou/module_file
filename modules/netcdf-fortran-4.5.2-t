@@ -1,6 +1,6 @@
 #%Module
 
-set s $APPROOT/opt/netcdf-fortran-4.5.2
+set s $APPROOT/opt/netcdf-fortran-4.4.5
 
 prepend-path PATH $s/bin
 prepend-path LIBRARY_PATH $s/lib
