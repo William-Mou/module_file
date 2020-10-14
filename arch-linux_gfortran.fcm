@@ -1,13 +1,13 @@
 %NCDF_HOME           $APPROOT/opt
 %HDF5_HOME           $APPROOT/opt
 
-%XIOS_HOME           $APPROOT/opt/XIOS/branchs/xios-2.5
+%XIOS_HOME           $APPROOT/opt/xios-2.5
 %OASIS_HOME          /not/defined
 
 
-%NCDF_INC            -I%NCDF_HOME/netcdf-c-4.7.3/include -I%NCDF_HOME/netcdf-fortran-4.5.2/include -I%NCDF_HOME/pnetcdf-1.12.0/include -I%HDF5_HOME/hdf5-1.8.21/include -I%XIOS_HOME/extern/src_netcdf4
+%NCDF_INC            -I%NCDF_HOME/netcdf-c-4.7.3/include -I%NCDF_HOME/netcdf-fortran-4.4.5/include -I%NCDF_HOME/pnetcdf-1.12.0/include -I%HDF5_HOME/hdf5-1.8.21/include -I%XIOS_HOME/extern/src_netcdf4
 
-%NCDF_LIB            -L%NCDF_HOME/netcdf-c-4.7.3/lib -L%NCDF_HOME/netcdf-fortran-4.5.2/lib -L%NCDF_HOME/pnetcdf-1.12.0/lib -Wl,-unresolved-symbols=ignore-in-object-files -lnetcdff -lnetcdf
+%NCDF_LIB            -L%NCDF_HOME/netcdf-c-4.7.3/lib -L%NCDF_HOME/netcdf-fortran-4.4.5/lib -L%NCDF_HOME/pnetcdf-1.12.0/lib -Wl,-unresolved-symbols=ignore-in-object-files -lnetcdff -lnetcdf
 
 %HDF5_INC            -I%HDF5_HOME/hdf5-1.8.21/include
 %HDF5_LIB            -L%HDF5_HOME/hdf5-1.8.21/lib -lhdf5_hl -lhdf5 -lhdf5 -lz
