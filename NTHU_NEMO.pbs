@@ -35,7 +35,7 @@ done > $APPROOT/$hostfile
 echo "=============================mpi run============================"
 
 
-cd $APPROOT/opt/nemo/nemo-4.0/cfgs/GYRE_PISCES_CSCS/EXP00
+cd $APPROOT/opt/nemo-4.0/cfgs/hpcx_linux_gfortran_gyre_pisces/EXP00/
 
 mpirun -np 480 \
 -machinefile $APPROOT/$hostfile \
