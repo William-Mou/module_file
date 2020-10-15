@@ -4,6 +4,7 @@ mkdir -p $APPROOT/build
 mkdir -p $APPROOT/opt
 export MODULEPATH=$APPROOT/modules:$MODULEPATH
 cd $APPROOT
+git clone https://github.com/William-Mou/module_file.git
 mv module_file/modules modules
 sed -i "s|\$APPROOT|$APPROOT|g" $APPROOT/modules/*
 
