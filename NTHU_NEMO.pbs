@@ -9,6 +9,7 @@
 #PBS -M n88199911652@gmail.com
 #PBS -m be
 
+export APPROOT=$APPROOT
 export MODULEPATH=$APPROOT/modules:$MODULEPATH
 module purge
 module load gcc-7.5.0-t
